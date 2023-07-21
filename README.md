@@ -9,7 +9,7 @@ Since there is no build system here, correctness can only be resolved through th
 import "google/protobuf/struct.proto";
 ```
 
-This assumes that your repo should be able to resolve `struct.proto` during compilation.
+This assumes that your repo should be able to resolve `google/protobuf/struct.proto` locally during compilation.
 
 Another caveat is the `go_package` definition. As of this writing, I ([@flowerinthenight](https://github.com/flowerinthenight)) don't know of any way to unify the definition across multiple repos. For example, if imported to `blueinternal`, it needs to be defined as:
 
