@@ -16,3 +16,4 @@ Please update the build system when you figure it out.
 
 Dependent repos:
 * [blueinternal](https://github.com/alphauslabs/blueinternal)
+* [blueapi](https://github.com/alphauslabs/blueapi)
