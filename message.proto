@@ -1,6 +1,8 @@
 syntax = "proto3";
 
-package protos;
+// This will be replaced by the build system.
+// To avoid conflicts in the binary's global protobuf registry.
+package tobereplaced;
 
 option go_package = "github.com/alphauslabs/protos";
 option java_package = "cloud.alphaus.protos";

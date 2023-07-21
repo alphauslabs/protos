@@ -1,5 +1,7 @@
 syntax = "proto3";
 
+// This will be replaced by the build system.
+// To avoid conflicts in the binary's global protobuf registry.
 package tobereplaced;
 
 import "google/protobuf/struct.proto";
