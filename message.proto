@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package protos;
+
+option go_package = "github.com/alphauslabs/protos";
+option java_package = "cloud.alphaus.protos";
+option java_outer_classname = "MessageProto";
+
+message Message {
+  // For now, non-zero means `message` is an error message, otherwise, a normal message.
+  int32 code = 1;
+
+  // Arbitrary message.
+  string message = 2;
+}

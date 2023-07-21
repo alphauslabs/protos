@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package protos;
+
+import "google/protobuf/struct.proto";
+
+option go_package = "github.com/alphauslabs/protos";
+option java_package = "cloud.alphaus.protos";
+option java_outer_classname = "EntityProto";
+
+// A generic entity with a type, id, name, and an attributes object.
+message Entity {
+  string type = 1;
+  string id = 2;
+  string name = 3;
+  google.protobuf.Struct attributes = 4;
+}
