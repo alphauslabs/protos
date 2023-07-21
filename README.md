@@ -12,7 +12,7 @@ while in `blueapi`, it should be:
 import "github.com/alphauslabs/blue-sdk-go/protos"
 ```
 
-Please update the build system when you figure it out.
+Please update the build system when you figure it out. At the moment, this is handled by updating import lines using `sed`.
 
 Dependent repos:
 * [blueinternal](https://github.com/alphauslabs/blueinternal)
