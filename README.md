@@ -3,7 +3,7 @@ This repo contains common protobuf definitions intended to be shared to other re
 * [blueinternal](https://github.com/alphauslabs/blueinternal)
 * [blueapi](https://github.com/alphauslabs/blueapi)
 
-Since there is no build system here, correctness can only be resolved through the importer's build system. It is assumed that the importing repo can resolve the imports used. For example, [entity.proto](./entity.proto) has an import of:
+Since there is no build system here, correctness can only be resolved through the importer's build system. It is assumed that the importing repo can resolve the imports used. For example, [entity.proto](./entity.proto) imports `struct.proto` like so:
 
 ```protobuf
 import "google/protobuf/struct.proto";
