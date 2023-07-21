@@ -1,7 +1,8 @@
 syntax = "proto3";
 
-// This will be replaced by the build system.
-// To avoid conflicts in the binary's global protobuf registry.
+// To avoid conflicts in the binary's global protobuf registry,
+// let's use a temporary package name. This will be replaced by
+// the importer's build system.
 package tobereplaced;
 
 option go_package = "github.com/alphauslabs/protos";
