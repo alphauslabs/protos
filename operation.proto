@@ -1,14 +1,14 @@
 syntax = "proto3";
 
-// To avoid conflicts in the binary's global protobuf registry,
-// let's use a temporary package name. This will be replaced by
-// the importer's build system.
-package tobereplaced;
+package protos;
 
 import "google/rpc/status.proto";
 import "google/protobuf/any.proto";
 
-option go_package = "github.com/alphauslabs/protos";
+// To avoid conflicts in the binary's global protobuf registry,
+// let's use a temporary package name. This will be replaced by
+// the importer's build system.
+option go_package = "github.com/alphauslabs/tobereplaced";
 option java_package = "cloud.alphaus.protos";
 option java_outer_classname = "OperationProto";
 
