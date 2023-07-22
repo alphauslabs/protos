@@ -2,9 +2,10 @@ syntax = "proto3";
 
 package protos;
 
-// To avoid conflicts in the binary's global protobuf registry,
-// let's use a temporary package name. This will be replaced by
-// the importer's build system.
+// https://protobuf.dev/reference/go/faq/#namespace-conflict
+// Although this won't really fix the conflict issue, we can
+// hope to minimize breakage when they are placed in different
+// Go package definitions.
 option go_package = "github.com/alphauslabs/tobereplaced";
 option java_package = "cloud.alphaus.protos";
 option java_outer_classname = "MessageProto";
