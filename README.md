@@ -25,7 +25,7 @@ import "github.com/alphauslabs/blue-sdk-go/protos"
 
 Please update the build system when you figure it out. At the moment, this is handled by updating import lines using `sed`.
 
-As a stopgap soution, when adding a new proto definition, define your `go_package` like so:
+As a stopgap solution, when adding a new proto definition, define your `go_package` like so:
 
 ```protobuf
 option go_package = "github.com/alphauslabs/tobereplaced";
